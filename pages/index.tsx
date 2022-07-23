@@ -5,7 +5,7 @@ import styled from "styled-components";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
-  return <ASd className={styles.container}>asd</ASd>;
+  return <ASd className={styles.container}>asdasd</ASd>;
 };
 
 const ASd = styled.div`
