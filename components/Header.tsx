@@ -74,7 +74,7 @@ export const ImageWrapper = styled.div`
   margin: 20px 0;
   font-size: 24px;
 `;
-const GoAppLinkStyled = styled.div`
+export const GoAppLinkStyled = styled.div`
   margin-top: 100px;
   display: flex;
   align-items: center;
@@ -86,5 +86,6 @@ const GoAppLinkStyled = styled.div`
   color: #171717;
   border-radius: 50px;
   font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 export default Header;
