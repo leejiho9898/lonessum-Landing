@@ -124,7 +124,6 @@ const MainLayout = styled.main`
   max-width: 1000px;
   width: 100%;
   font-size: 24px;
-  line-height: 48px;
 `;
 const MainDescription = styled(Description)`
   margin-right: 90px;
@@ -138,9 +137,11 @@ const DescriptionTit = styled.div`
 const SubTit = styled.div`
   margin: 8px 0 63px 0;
   font-size: 42px;
+  line-height: 48px;
   font-weight: 800;
 `;
 const MainContents = styled(Contents)`
   padding-top: 120px;
+  line-height: 32px;
 `;
 export default Main;
