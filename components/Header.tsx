@@ -2,13 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import {
-  Instagram,
-  KakaoTalk,
-  Logo,
-  Model2,
-  StringLogo,
-} from "../assets/img";
+import { Instagram, KakaoTalk, Logo, Model, StringLogo } from "../assets/img";
 
 function Header() {
   return (
@@ -31,13 +25,18 @@ function Header() {
           alt="외딴썸 공식 카카오톡"
         />
       </HeaderTop>
-      <HeaderContents>
+      <Contents>
         <Description>
           <ImageWrapper>
             <Image src={Logo} width={102} height={102} alt="외딴썸 로고" />
           </ImageWrapper>
           <ImageWrapper>
-            <Image src={StringLogo} width={213} height={71} alt="외딴썸 로고" />
+            <Image
+              src={StringLogo}
+              width={213}
+              height={71}
+              alt="외딴썸 글자 로고"
+            />
           </ImageWrapper>
           <ImageWrapper>
             유학생이 만든 국내 최초
@@ -46,8 +45,8 @@ function Header() {
           </ImageWrapper>
           <GoAppLinkStyled>매칭하러 가기</GoAppLinkStyled>
         </Description>
-        <Image src={Model2} width={594} height={862} alt="외딴썸 로고" />
-      </HeaderContents>
+        <Image src={Model} width={594} height={862} alt="모델 이미지" />
+      </Contents>
     </HeaderLayout>
   );
 }
@@ -62,16 +61,16 @@ const HeaderTop = styled.div`
   justify-content: right;
   gap: 4px;
 `;
-const HeaderContents = styled.div`
+export const Contents = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
 `;
-const Description = styled.article`
+export const Description = styled.article`
   width: 350px;
   margin-top: 140px;
 `;
-const ImageWrapper = styled.div`
+export const ImageWrapper = styled.div`
   margin: 20px 0;
   font-size: 24px;
 `;
