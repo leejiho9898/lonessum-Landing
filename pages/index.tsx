@@ -1,15 +1,17 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styled from "styled-components";
-import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
-  return <ASd className={styles.container}>asd</ASd>;
-};
+  return (
+    <div>
+      <Header />
+      <main>asd</main>
 
-const ASd = styled.div`
-  font-size: 100px;
-`;
+      <footer></footer>
+    </div>
+  );
+};
 
 export default Home;
