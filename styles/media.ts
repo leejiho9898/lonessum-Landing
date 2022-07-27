@@ -12,7 +12,7 @@ export const mediaSize = {
 
 const { xxlarge, xlarge, large, medium, small, xsmall } = mediaSize;
 
-export const mediaMax = {
+export const media = {
   xxlarge: mediaQuery(xxlarge),
   xlarge: mediaQuery(xlarge),
   large: mediaQuery(large),
