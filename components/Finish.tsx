@@ -12,7 +12,9 @@ function Finish() {
           <Image src={Logo} width={102} height={102} alt="외딴썸 로고" />
         </ImageWrapper>
         지금 외딴썸에서 <br /> 유학생 연인을 찾아보세요.
-        <GoAppLinkStyled> 매칭하러 가기</GoAppLinkStyled>
+        <GoAppLinkStyled>
+          <a href="app.lonessum.com">매칭하러 가기</a>
+        </GoAppLinkStyled>
       </FinishContent>
     </FinishLayout>
   );

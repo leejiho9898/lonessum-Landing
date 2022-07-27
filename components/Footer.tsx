@@ -12,10 +12,22 @@ function Footer() {
         </InfoBox>
         <InfoBox>
           <InfoTit>소셜 미디어</InfoTit>
-          <InfoStlyed>인스타그램</InfoStlyed>
-          <InfoStlyed>페이스북</InfoStlyed>
-          <InfoStlyed>카카오톡</InfoStlyed>
-          <InfoStlyed>링크드인</InfoStlyed>
+          <InfoStlyed>
+            <a href="https://www.instagram.com/lonessum_official/">
+              인스타그램
+            </a>
+          </InfoStlyed>
+          <InfoStlyed>
+            <a href="https://www.facebook.com/%EC%99%B8%EB%94%B4%EC%8D%B8-100114032761412/">
+              페이스북
+            </a>
+          </InfoStlyed>
+          <InfoStlyed>
+            <a href="http://pf.kakao.com/_XUkxkb"> 카카오톡</a>
+          </InfoStlyed>
+          <InfoStlyed>
+            <a href="https://www.linkedin.com/company/lonessum/">링크드인</a>
+          </InfoStlyed>
         </InfoBox>
       </FooterContents>
       <FooterContents>
@@ -55,7 +67,7 @@ const InfoStlyed = styled.div`
 `;
 const EtcInfos = styled.div`
   color: #969696;
-  line-height: 24px;
+  line-height: 30px;
   font-size: 20px;
 `;
 

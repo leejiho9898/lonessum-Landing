@@ -12,18 +12,22 @@ function Header() {
     // </Head>
     <HeaderLayout>
       <HeaderTop>
-        <Image
-          src={Instagram}
-          width={60}
-          height={60}
-          alt="외딴썸 공식 인스타그램"
-        />
-        <Image
-          src={KakaoTalk}
-          width={60}
-          height={60}
-          alt="외딴썸 공식 카카오톡"
-        />
+        <a href="https://www.instagram.com/lonessum_official/">
+          <Image
+            src={Instagram}
+            width={60}
+            height={60}
+            alt="외딴썸 공식 인스타그램"
+          />
+        </a>
+        <a href="http://pf.kakao.com/_XUkxkb">
+          <Image
+            src={KakaoTalk}
+            width={60}
+            height={60}
+            alt="외딴썸 공식 카카오톡"
+          />
+        </a>
       </HeaderTop>
       <Contents>
         <Description>
@@ -43,7 +47,9 @@ function Header() {
             <br />
             유학생 미팅·소개팅 서비스
           </ImageWrapper>
-          <GoAppLinkStyled>매칭하러 가기</GoAppLinkStyled>
+          <GoAppLinkStyled>
+            <a href="app.lonessum.com">매칭하러 가기</a>
+          </GoAppLinkStyled>
         </Description>
         <Image src={Model} width={594} height={862} alt="모델 이미지" />
       </Contents>
