@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../assets/img";
+import { media } from "../styles/media";
 import { Contents, GoAppLinkStyled, ImageWrapper } from "./Header";
 
 function Finish() {
@@ -24,6 +25,7 @@ const FinishLayout = styled.div`
   background-color: #4adac4;
   padding: 100px 0;
   color: #ffff;
+  width: 100%;
 `;
 const FinishContent = styled.div`
   font-size: 28px;
@@ -32,6 +34,9 @@ const FinishContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  ${media.medium} {
+    font-size: 22px;
+  }
 `;
 
 export default Finish;
