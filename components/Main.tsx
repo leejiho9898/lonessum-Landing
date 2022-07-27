@@ -8,6 +8,7 @@ import {
   Demonstration4,
   Demonstration5,
 } from "../assets/img";
+import { media } from "../styles/media";
 import { Contents, Description, ImageWrapper } from "./Header";
 
 function Main() {
@@ -34,15 +35,7 @@ function Main() {
           />
         </ImageWrapper>
       </MainContents>
-      <MainContents>
-        <ImageWrapper>
-          <Image
-            src={Demonstration5}
-            width={561}
-            height={674}
-            alt="설문 이미지"
-          />
-        </ImageWrapper>
+      <MainContentsReverse>
         <MainRightDescription>
           <SubTit>
             롱디는 그만! <br /> 동네 유학생만
@@ -52,16 +45,16 @@ function Main() {
             편하게 연애하세요.
           </div>
         </MainRightDescription>
-      </MainContents>
-      <MainContents>
         <ImageWrapper>
           <Image
-            src={Demonstration3}
-            width={274}
-            height={521}
+            src={Demonstration5}
+            width={561}
+            height={674}
             alt="설문 이미지"
           />
         </ImageWrapper>
+      </MainContentsReverse>
+      <MainContentsReverse>
         <MainRightDescription>
           <DescriptionTit>기피학교 설정</DescriptionTit>
           <SubTit>
@@ -73,7 +66,15 @@ function Main() {
             <br /> 더 이상 눈치보지 말고 매칭하세요!
           </div>
         </MainRightDescription>
-      </MainContents>
+        <ImageWrapper>
+          <Image
+            src={Demonstration3}
+            width={274}
+            height={521}
+            alt="설문 이미지"
+          />
+        </ImageWrapper>
+      </MainContentsReverse>
       <MainContents>
         <MainDescription>
           <DescriptionTit>안전 시스템</DescriptionTit>
@@ -124,12 +125,26 @@ const MainLayout = styled.main`
   max-width: 1000px;
   width: 100%;
   font-size: 24px;
+  padding: 0 40px;
+  ${media.medium} {
+    padding: 0 20px;
+    font-size: 18px;
+  }
+  ${media.small} {
+    padding: 0 12px;
+  }
 `;
 const MainDescription = styled(Description)`
   margin-right: 90px;
+  ${media.medium} {
+    margin-right: 0px;
+  }
 `;
 const MainRightDescription = styled(Description)`
   margin-left: 90px;
+  ${media.medium} {
+    margin-left: 0px;
+  }
 `;
 const DescriptionTit = styled.div`
   color: #90d5c4;
@@ -139,9 +154,16 @@ const SubTit = styled.div`
   font-size: 42px;
   line-height: 48px;
   font-weight: 800;
+  ${media.medium} {
+    font-size: 32px;
+    line-height: 34px;
+  }
 `;
 const MainContents = styled(Contents)`
   padding-top: 120px;
   line-height: 32px;
+`;
+const MainContentsReverse = styled(MainContents)`
+  flex-direction: row-reverse;
 `;
 export default Main;
