@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import { Instagram, KakaoTalk, Logo, Model, StringLogo } from "../assets/img";
+import { media } from "../styles/media";
 
 function Header() {
   return (
@@ -31,9 +32,9 @@ function Header() {
       </HeaderTop>
       <Contents>
         <Description>
-          <ImageWrapper>
+          <ImgToggleWrapper>
             <Image src={Logo} width={102} height={102} alt="외딴썸 로고" />
-          </ImageWrapper>
+          </ImgToggleWrapper>
           <ImageWrapper>
             <Image
               src={StringLogo}
@@ -48,7 +49,7 @@ function Header() {
             유학생 미팅·소개팅 서비스
           </ImageWrapper>
           <GoAppLinkStyled>
-            <a href="app.lonessum.com">매칭하러 가기</a>
+            <a href="https://app.lonessum.com">매칭하러 가기</a>
           </GoAppLinkStyled>
         </Description>
         <Image src={Model} width={594} height={862} alt="모델 이미지" />
@@ -60,7 +61,11 @@ function Header() {
 const HeaderLayout = styled.header`
   background-color: #4adac4;
   padding: 30px 30px 0 30px;
+  width: 100%;
   color: #ffff;
+  ${media.medium} {
+    padding: 0 16px;
+  }
 `;
 const HeaderTop = styled.div`
   display: flex;
@@ -71,17 +76,26 @@ export const Contents = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  ${media.medium} {
+    display: block;
+  }
 `;
 export const Description = styled.article`
   width: 350px;
   margin-top: 140px;
 `;
 export const ImageWrapper = styled.div`
-  margin: 20px 0;
+  margin: 20px 4px;
   font-size: 24px;
+  width: fit-content;
+`;
+const ImgToggleWrapper = styled(ImageWrapper)`
+  ${media.medium} {
+    display: none;
+  }
 `;
 export const GoAppLinkStyled = styled.div`
-  margin-top: 100px;
+  margin: 100px 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,5 +107,10 @@ export const GoAppLinkStyled = styled.div`
   border-radius: 50px;
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  ${media.medium} {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+  }
 `;
 export default Header;
