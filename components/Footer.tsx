@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { media } from "../styles/media";
 
 function Footer() {
   return (
@@ -45,6 +46,10 @@ function Footer() {
 const FooterLayout = styled.footer`
   background-color: #2c323a;
   color: #f0f0f0;
+  width: 100%;
+  ${media.medium} {
+    padding: 0 16px;
+  }
 `;
 const FooterContents = styled.div`
   margin: 0 auto;
@@ -69,6 +74,9 @@ const EtcInfos = styled.div`
   color: #969696;
   line-height: 30px;
   font-size: 20px;
+  ${media.medium} {
+    font-size: 14px;
+  }
 `;
 
 export default Footer;
