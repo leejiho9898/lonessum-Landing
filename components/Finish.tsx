@@ -3,7 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import { Logo } from "../assets/img";
 import { media } from "../styles/media";
-import { Contents, GoAppLinkStyled, ImageWrapper } from "./Header";
+import GoAppBox from "./GoAppBox";
+import { Contents, ImageWrapper } from "./Header";
 
 function Finish() {
   return (
@@ -13,9 +14,7 @@ function Finish() {
           <Image src={Logo} width={102} height={102} alt="외딴썸 로고" />
         </ImageWrapper>
         지금 외딴썸에서 <br /> 유학생 연인을 찾아보세요.
-        <GoAppLinkStyled>
-          <a href="app.lonessum.com">매칭하러 가기</a>
-        </GoAppLinkStyled>
+        <GoAppBox />
       </FinishContent>
     </FinishLayout>
   );
