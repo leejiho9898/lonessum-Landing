@@ -5,7 +5,7 @@ import { media } from "../styles/media";
 function GoAppBox() {
   return (
     <GoAppLinkStyled>
-      <a href="https://app.lonessum.com">매칭하러 가기</a>
+      <a href="https://lonessum.com">매칭하러 가기</a>
     </GoAppLinkStyled>
   );
 }
@@ -24,9 +24,11 @@ export const GoAppLinkStyled = styled.div`
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   ${media.medium} {
-    width: 200px;
-    height: 40px;
-    font-size: 18px;
+    margin: 36px 0 0 0;
+    width: 165px;
+    height: 37px;
+    font-size: 16px;
+    z-index: 9999;
   }
 `;
 

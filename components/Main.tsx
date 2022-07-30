@@ -54,7 +54,7 @@ function Main() {
           />
         </ImageWrapper>
       </MainContentsReverse>
-      <MainContentsReverse>
+      <CenterContents>
         <MainRightDescription>
           <DescriptionTit>기피학교 설정</DescriptionTit>
           <SubTit>
@@ -74,7 +74,7 @@ function Main() {
             alt="설문 이미지"
           />
         </ImageWrapper>
-      </MainContentsReverse>
+      </CenterContents>
       <MainContents>
         <MainDescription>
           <DescriptionTit>안전 시스템</DescriptionTit>
@@ -82,9 +82,9 @@ function Main() {
             자동 인증 시스템으로 <br /> 외딴썸에서 안전하게
           </SubTit>
           <div>
-            1. 학교 이메일을 통한 본인 인증
-            <br /> 2. 24시간 불건전 유저 모니터링
-            <br /> 3. 비매너 유저 신고 기능
+            ✅ 학교 이메일을 통한 본인 인증
+            <br /> ✅ 24시간 불건전 유저 모니터링
+            <br /> ✅ 비매너 유저 신고 기능
           </div>
         </MainDescription>
         <ImageWrapper>
@@ -99,12 +99,12 @@ function Main() {
       <MainContents>
         <MainDescription>
           <SubTit>
-            매일 10시 <br /> 엄선된 유학생이 <br />
+            매일 10시 <br /> 최적의 상대가 <br />
             소개됩니다.
           </SubTit>
           <div>
             메일을 통해 학교인증을 마치고
-            <br /> 이상형 테스트에 통과하신 여성회원
+            <br /> 매칭 알고리즘이 선정한 회원
           </div>
         </MainDescription>
         <ImageWrapper>
@@ -123,11 +123,13 @@ function Main() {
 const MainLayout = styled.main`
   margin: 0 auto;
   max-width: 1000px;
+  line-height: 32px;
   font-size: 24px;
   padding: 0 40px;
   ${media.medium} {
     padding: 0 20px;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
   }
   ${media.small} {
     padding: 0 12px;
@@ -145,8 +147,12 @@ const MainRightDescription = styled(Description)`
     margin-left: 0px;
   }
 `;
+
 const DescriptionTit = styled.div`
   color: #90d5c4;
+  ${media.medium} {
+    font-size: 16px;
+  }
 `;
 const SubTit = styled.div`
   margin: 8px 0 63px 0;
@@ -154,15 +160,20 @@ const SubTit = styled.div`
   line-height: 48px;
   font-weight: 800;
   ${media.medium} {
-    font-size: 32px;
-    line-height: 34px;
+    margin: 8px 0 40px 0;
+    font-size: 24px;
+    line-height: 28px;
   }
 `;
 const MainContents = styled(Contents)`
   padding-top: 120px;
-  line-height: 32px;
 `;
 const MainContentsReverse = styled(MainContents)`
   flex-direction: row-reverse;
+`;
+
+const CenterContents = styled(MainContentsReverse)`
+  text-align: center;
+  width: 100%;
 `;
 export default Main;

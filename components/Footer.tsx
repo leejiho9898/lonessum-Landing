@@ -24,7 +24,7 @@ function Footer() {
             </a>
           </InfoStlyed>
           <InfoStlyed>
-            <a href="http://pf.kakao.com/_XUkxkb"> 카카오톡</a>
+            <a href="http://pf.kakao.com/_XyXIxj/chat"> 카카오톡</a>
           </InfoStlyed>
           <InfoStlyed>
             <a href="https://www.linkedin.com/company/lonessum/">링크드인</a>
@@ -53,13 +53,17 @@ const FooterLayout = styled.footer`
 const FooterContents = styled.div`
   margin: 0 auto;
   padding: 80px 10px;
-
+  max-width: 1040px;
+  width: 100%;
   display: flex;
 `;
 const InfoBox = styled.div`
   width: 150px;
   font-weight: 700;
   font-size: 20px;
+  ${media.medium} {
+    font-size: 12px;
+  }
 `;
 const InfoTit = styled.div`
   color: #abacb0;
@@ -73,7 +77,7 @@ const EtcInfos = styled.div`
   line-height: 30px;
   font-size: 20px;
   ${media.medium} {
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
