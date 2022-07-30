@@ -16,14 +16,14 @@ function Header() {
           <ImgToggleWrapper>
             <Image src={Logo} width={102} height={102} alt="외딴썸 로고" />
           </ImgToggleWrapper>
-          <ImageWrapper>
+          <LogoWrapper>
             <Image
               src={StringLogo}
               width={213}
               height={71}
               alt="외딴썸 글자 로고"
             />
-          </ImageWrapper>
+          </LogoWrapper>
           <ImageWrapper>
             유학생이 만든 국내 최초
             <br />
@@ -55,13 +55,20 @@ export const Contents = styled.div`
   }
 `;
 export const Description = styled.article`
-  width: 350px;
   margin-top: 140px;
 `;
 export const ImageWrapper = styled.div`
   margin: 20px 4px;
   font-size: 24px;
-  width: fit-content;
+  ${media.medium} {
+    font-size: 20px;
+  }
+`;
+export const LogoWrapper = styled(ImageWrapper)`
+  ${media.medium} {
+    width: 130px;
+    height: 50px;
+  }
 `;
 const ImgToggleWrapper = styled(ImageWrapper)`
   ${media.medium} {

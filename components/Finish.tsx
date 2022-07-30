@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Logo } from "../assets/img";
 import { media } from "../styles/media";
 import GoAppBox from "./GoAppBox";
-import { Contents, ImageWrapper } from "./Header";
+import { ImageWrapper } from "./Header";
 
 function Finish() {
   return (
@@ -33,7 +33,7 @@ const FinishContent = styled.div`
   flex-direction: column;
   align-items: center;
   ${media.medium} {
-    font-size: 22px;
+    font-size: 18px;
   }
 `;
 
