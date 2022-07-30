@@ -24,7 +24,7 @@ export const GoAppLinkStyled = styled.div`
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   ${media.medium} {
-    margin: 36px 0 0 0;
+    margin: 36px auto 10px auto;
     width: 165px;
     height: 37px;
     font-size: 16px;
