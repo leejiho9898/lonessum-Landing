@@ -24,7 +24,6 @@ const FinishLayout = styled.div`
   background-color: #4adac4;
   padding: 100px 0;
   color: #ffff;
-  width: 100%;
 `;
 const FinishContent = styled.div`
   font-size: 28px;

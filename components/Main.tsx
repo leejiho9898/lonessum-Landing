@@ -123,7 +123,6 @@ function Main() {
 const MainLayout = styled.main`
   margin: 0 auto;
   max-width: 1000px;
-  width: 100%;
   font-size: 24px;
   padding: 0 40px;
   ${media.medium} {

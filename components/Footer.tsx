@@ -46,7 +46,6 @@ function Footer() {
 const FooterLayout = styled.footer`
   background-color: #2c323a;
   color: #f0f0f0;
-  width: 100%;
   ${media.medium} {
     padding: 0 16px;
   }
@@ -54,8 +53,7 @@ const FooterLayout = styled.footer`
 const FooterContents = styled.div`
   margin: 0 auto;
   padding: 80px 10px;
-  max-width: 1040px;
-  width: 100%;
+
   display: flex;
 `;
 const InfoBox = styled.div`

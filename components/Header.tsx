@@ -40,7 +40,6 @@ function Header() {
 const HeaderLayout = styled.header`
   background-color: #4adac4;
   padding: 30px 30px 0 30px;
-  width: 100%;
   color: #ffff;
   ${media.medium} {
     padding: 0 16px;
