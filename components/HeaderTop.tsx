@@ -38,7 +38,7 @@ const HeaderTopStyled = styled.div`
 const IconLink = styled.a`
   margin: 0 2px;
   ${media.medium} {
-    width: 30px;
+    width: 33px;
   }
 `;
 
