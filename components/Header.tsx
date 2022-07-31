@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import { Logo, Model, StringLogo } from "../assets/img";
+import { Logo, ModelShort, StringLogo } from "../assets/img";
 import { media } from "../styles/media";
 import GoAppBox from "./GoAppBox";
 import HeaderTop from "./HeaderTop";
@@ -34,7 +34,7 @@ function Header() {
           </DisapperBox>
         </Description>
         <OverLayWrapper>
-          <Asd src={Model} width={594} height={862} alt="모델 이미지" />
+          <Asd src={ModelShort} width={640} height={739} alt="모델 이미지" />
           <AppearBox>
             <GoAppBox />
           </AppearBox>
@@ -60,6 +60,8 @@ const AppearBox = styled.div`
 `;
 const Asd = styled(Image)`
   display: block;
+  position: absolute;
+  bottom: 0px;
 `;
 const OverLayWrapper = styled.div`
   position: relative;
@@ -82,12 +84,7 @@ export const Contents = styled.div`
     display: block;
   }
 `;
-export const Description = styled.article`
-  margin-top: 140px;
-  ${media.medium} {
-    margin-top: 20px;
-  }
-`;
+export const Description = styled.article``;
 export const ImageWrapper = styled.div`
   margin: 20px 4px;
   font-size: 24px;
