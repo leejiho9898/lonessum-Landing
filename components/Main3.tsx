@@ -17,7 +17,7 @@ function Main3() {
         <MainDescription>
           <DescriptionTit>안전 시스템</DescriptionTit>
           <SubTit>
-            자동 인증 시스템으로 <br /> 외딴썸에서 안전하게
+            학교 인증 시스템으로 <br /> 외딴썸에서 안전하게
           </SubTit>
           <div>
             ✅ 학교 이메일을 통한 본인 인증

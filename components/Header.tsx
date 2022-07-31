@@ -29,14 +29,42 @@ function Header() {
             <br />
             유학생 미팅·소개팅 서비스
           </ImageWrapper>
-          <GoAppBox />
+          <DisapperBox>
+            <GoAppBox />
+          </DisapperBox>
         </Description>
-        <Image src={Model} width={594} height={862} alt="모델 이미지" />
+        <OverLayWrapper>
+          <Asd src={Model} width={594} height={862} alt="모델 이미지" />
+          <AppearBox>
+            <GoAppBox />
+          </AppearBox>
+        </OverLayWrapper>
       </Contents>
     </HeaderLayout>
   );
 }
-
+const DisapperBox = styled.div`
+  ${media.medium} {
+    display: none;
+  }
+`;
+const AppearBox = styled.div`
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 1.75em;
+  ${media.medium} {
+    display: block;
+  }
+`;
+const Asd = styled(Image)`
+  display: block;
+`;
+const OverLayWrapper = styled.div`
+  position: relative;
+  display: block;
+`;
 const HeaderLayout = styled.header`
   background-color: #4adac4;
   padding: 30px 30px 0 30px;

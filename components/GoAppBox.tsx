@@ -25,10 +25,15 @@ export const GoAppLinkStyled = styled.div`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   ${media.medium} {
     margin: 36px auto 10px auto;
+    font-size: 22px;
+    width: 220px;
+    height: 50px;
+    z-index: 9999;
+  }
+  ${media.small} {
     width: 165px;
     height: 37px;
     font-size: 16px;
-    z-index: 9999;
   }
 `;
 
