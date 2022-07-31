@@ -11,7 +11,7 @@ function GoAppBox() {
 }
 
 export const GoAppLinkStyled = styled.div`
-  margin: 180px 0 10px 0;
+  margin: 100px 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;

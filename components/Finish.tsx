@@ -21,6 +21,7 @@ function Finish() {
 }
 
 const FinishLayout = styled.div`
+  margin-top: 100px;
   background-color: #4adac4;
   padding: 100px 0;
   color: #ffff;

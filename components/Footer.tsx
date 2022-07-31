@@ -52,7 +52,7 @@ const FooterLayout = styled.footer`
 `;
 const FooterContents = styled.div`
   margin: 0 auto;
-  padding: 80px 10px;
+  padding: 80px 0;
   max-width: 1040px;
   width: 100%;
   display: flex;

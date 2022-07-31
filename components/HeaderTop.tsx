@@ -34,6 +34,7 @@ const HeaderTopStyled = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: right;
+  -webkit-justify-content: right;
 `;
 const IconLink = styled.a`
   margin: 0 2px;

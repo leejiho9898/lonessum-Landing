@@ -34,7 +34,7 @@ function Header() {
           </DisapperBox>
         </Description>
         <OverLayWrapper>
-          <Asd src={ModelShort} width={640} height={739} alt="모델 이미지" />
+          <Image src={ModelShort} width={640} height={739} alt="모델 이미지" />
           <AppearBox>
             <GoAppBox />
           </AppearBox>
@@ -43,6 +43,16 @@ function Header() {
     </HeaderLayout>
   );
 }
+const HeaderLayout = styled.header`
+  background-color: #4adac4;
+  margin-bottom: 160px;
+  padding: 30px 30px 0 30px;
+  color: #ffff;
+  ${media.medium} {
+    padding: 0 26px;
+    margin-bottom: 50px;
+  }
+`;
 const DisapperBox = styled.div`
   ${media.medium} {
     display: none;
@@ -58,21 +68,11 @@ const AppearBox = styled.div`
     display: block;
   }
 `;
-const Asd = styled(Image)`
-  display: block;
-  position: absolute;
-  bottom: 0px;
-`;
 const OverLayWrapper = styled.div`
   position: relative;
   display: block;
-`;
-const HeaderLayout = styled.header`
-  background-color: #4adac4;
-  padding: 30px 30px 0 30px;
-  color: #ffff;
-  ${media.medium} {
-    padding: 0 16px;
+  span {
+    display: block !important;
   }
 `;
 
@@ -84,7 +84,12 @@ export const Contents = styled.div`
     display: block;
   }
 `;
-export const Description = styled.article``;
+const Description = styled.article`
+  padding-left: 14px;
+  span {
+    display: block !important;
+  }
+`;
 export const ImageWrapper = styled.div`
   margin: 20px 4px;
   font-size: 24px;

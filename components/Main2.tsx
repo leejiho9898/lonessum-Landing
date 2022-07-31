@@ -28,14 +28,14 @@ function Main2() {
               <br /> 더 이상 눈치보지 말고 매칭하세요!
             </div>
           </MainRightDescription>
-          <ImageWrapper>
+          <SmallImageWrapper>
             <Image
               src={Demonstration3}
               width={274}
               height={521}
               alt="설문 이미지"
             />
-          </ImageWrapper>
+          </SmallImageWrapper>
         </CenterContents>
       </MainLayout>
     </MainBackground>
@@ -43,6 +43,10 @@ function Main2() {
 }
 const MainBackground = styled.div`
   background-color: #f9fafc;
+`;
+
+const SmallImageWrapper = styled(ImageWrapper)`
+  padding: 0 62px;
 `;
 
 const CenterContents = styled(MainContentsReverse)`

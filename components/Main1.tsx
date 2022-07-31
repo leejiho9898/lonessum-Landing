@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Demonstration1, Demonstration5 } from "../assets/img";
 import { media } from "../styles/media";
-import { Contents, Description, ImageWrapper } from "./Header";
+import { Contents, ImageWrapper } from "./Header";
 const Main1 = () => {
   return (
     <MainLayout>
@@ -59,12 +59,17 @@ export const MainLayout = styled.main`
   padding: 0 40px;
   ${media.medium} {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 28px;
   }
   ${media.xsmall} {
     padding: 0 20px;
   }
 `;
+
+const Description = styled.article`
+  padding-bottom: 28px;
+`;
+
 export const MainDescription = styled(Description)`
   margin-right: 90px;
   ${media.medium} {
@@ -80,6 +85,7 @@ export const MainRightDescription = styled(Description)`
 
 export const DescriptionTit = styled.div`
   color: #90d5c4;
+  font-weight: 700;
   ${media.medium} {
     font-size: 16px;
   }
