@@ -28,11 +28,15 @@ const HeaderTop = () => {
 };
 
 const HeaderTopStyled = styled.div`
+  max-width: 1040px;
+  padding-top: 30px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: right;
-  gap: 4px;
 `;
 const IconLink = styled.a`
+  margin: 0 2px;
   ${media.medium} {
     width: 30px;
   }

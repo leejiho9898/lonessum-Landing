@@ -1,17 +1,19 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import styled from "styled-components";
 import Finish from "../components/Finish";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Main from "../components/Main";
+import Main1 from "../components/Main1";
+import Main2 from "../components/Main2";
+import Main3 from "../components/Main3";
 
 const Home: NextPage = () => {
   return (
     <HomeLayout>
       <Header />
-      <Main />
+      <Main1 />
+      <Main2 />
+      <Main3 />
       <Finish />
       <Footer />
     </HomeLayout>

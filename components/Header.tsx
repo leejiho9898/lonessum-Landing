@@ -56,6 +56,9 @@ export const Contents = styled.div`
 `;
 export const Description = styled.article`
   margin-top: 140px;
+  ${media.medium} {
+    margin-top: 20px;
+  }
 `;
 export const ImageWrapper = styled.div`
   margin: 20px 4px;
