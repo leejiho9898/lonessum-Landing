@@ -86,9 +86,6 @@ export const Contents = styled.div`
 `;
 const Description = styled.article`
   padding-left: 14px;
-  span {
-    display: block !important;
-  }
 `;
 export const ImageWrapper = styled.div`
   margin: 20px 4px;
