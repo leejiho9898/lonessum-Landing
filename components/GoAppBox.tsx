@@ -2,16 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import { media } from "../styles/media";
 
-function GoAppBox() {
+interface GoAppBoxProps {
+  isFinish: boolean;
+}
+function GoAppBox({ isFinish }: GoAppBoxProps) {
   return (
-    <GoAppLinkStyled>
+    <GoAppLinkStyled isFinish={isFinish}>
       <a href="https://lonessum.com">매칭하러 가기</a>
     </GoAppLinkStyled>
   );
 }
 
-export const GoAppLinkStyled = styled.div`
-  margin: 100px 0 10px 0;
+export const GoAppLinkStyled = styled.div<{ isFinish: boolean }>`
+  margin: ${({ isFinish }) => (isFinish ? "68px 0 10px 0" : "100px 0 10px 0")};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +27,7 @@ export const GoAppLinkStyled = styled.div`
   font-size: 30px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   ${media.large} {
-    margin: 80px 0 10px 0;
+    margin: ${({ isFinish }) => (isFinish ? "56px 0 10px 0" : "80px 0 10px 0")};
   }
   ${media.medium} {
     margin: 36px auto 10px auto;

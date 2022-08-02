@@ -30,13 +30,13 @@ function Header() {
             유학생 미팅·소개팅 서비스
           </ImageWrapper>
           <DisapperBox>
-            <GoAppBox />
+            <GoAppBox isFinish={false} />
           </DisapperBox>
         </Description>
         <OverLayWrapper>
           <Image src={ModelShort} width={640} height={739} alt="모델 이미지" />
           <AppearBox>
-            <GoAppBox />
+            <GoAppBox isFinish={false} />
           </AppearBox>
         </OverLayWrapper>
       </Contents>
